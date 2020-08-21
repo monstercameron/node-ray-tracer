@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
+    <title>Ray-Tracing Demo Page</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center py-5">
+          <h1>Raytracer</h1>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-7 mx-auto">
+          <canvas
+            class="border shadow-lg d-block mx-auto"
+            id="canvas"
+            height="300"
+            width="300"
+          ></canvas>
+        </div>
+        <div class="col-5">
+          <div class="row">
+            <div class="col-6">
+              <button class="btn btn-success btn-block" id="connect">
+                Connect
+              </button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-danger btn-block" id="disconnect">
+                disconnect
+              </button>
+            </div>
+          </div>
+          <hr />
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Pan camera
+            </label>
+          </div>
+          <input
+            type="range"
+            class="form-range"
+            min="0"
+            max="5"
+            id="customRange1"
+          />
+          <label for="customRange1" class="form-label">Speed</label>
+          <hr />
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckChecked"
+              checked
+            />
+            <label class="form-check-label" for="flexCheckChecked">
+              Enable animation
+            </label>
+          </div>
+          <input
+            type="range"
+            class="form-range"
+            min="0"
+            max="5"
+            id="customRange2"
+          />
+          <label for="customRange2" class="form-label">Speed</label>
+          <hr />
+          <button class="btn btn-danger btn-block" id="transmit">Tx/Rx</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center py-5">
+          <hr />
+          <h5>notes:</h5>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/static/js/script.js"></script>
+  </body>
+</html>
